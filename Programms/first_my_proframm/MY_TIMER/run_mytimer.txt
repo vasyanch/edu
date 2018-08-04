@@ -1,0 +1,12 @@
+for test in (forLoop, listComp, mapCall, genExpr, genFunc):
+	elapsed, result = mytimer.timer(test)
+	print('-' *33)
+	print('%-9s: %.5f => [%s...%s]' % (test.__name__, elapsed, result[0], result[-1]))
+
+
+Здесь (forLoop, listComp, mapCall, genExpr, genFunc) - это кортеж функций. 
+Данный цикл выполняет оценку времени выполнения функций из данного кортежа.
+Для этого необходимо импорировать пользовательский модуль mytimer.py в IDLE и запустить
+описанный выше цикл.
+
+  
