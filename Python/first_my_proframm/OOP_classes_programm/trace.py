@@ -1,6 +1,0 @@
-class wrapper:
-    def  __init__(self, obj):
-        self.wrapped = obj
-    def __getattr__(self, attrname):
-        print('Trace:', attrname)
-        return getattr(self.wrapped, attrname)
