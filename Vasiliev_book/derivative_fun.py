@@ -21,9 +21,9 @@ def f2(x):
 def show(F, N, X, dx, f):
     for i in range(N+1):
         x  = i*X/N
-        print(F(x), F(x, dx), f(x), sep = '->')
+        print(F(x), F(x, dx), f(x), sep = '\t')
         
 print('Производная x**2 = 2*x:')
-show(D(f1), 2, 10, 0.01, lambda x: 2*x)
+show(D(f1), 10, 2, 0.01, lambda x: 2*x)
 print('Производная 1/(x+1) = -1/(x+1)**2:')
 show(D(f2), 10, 2, 0.01, lambda x: -1/(1+x)**2)    
