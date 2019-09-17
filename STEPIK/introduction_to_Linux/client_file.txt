@@ -1,4 +1,0 @@
-Hello, server!
-
-Best regards,
-Client
